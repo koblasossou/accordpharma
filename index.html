@@ -19,7 +19,7 @@
     <link rel="icon" type="image/svg+xml" href="images/favicon/broadcast-pin.svg">
 
     <style>
-      
+       
         :root {
   /* Updated to green palette for pharmaceutical branding */
   --primary-color: #2e7d32;     /* Deep green for main brand color */
@@ -49,7 +49,14 @@
             scroll-behavior: smooth;
         }
 
-        /* Navigation */
+        
+/* COMMENT: Style carousel images as background */
+.hero .carousel-inner .carousel-item img.hero-bg {
+  object-fit: cover;
+  height: 100vh;
+  filter: brightness(0.6); /* Darken for text readability */
+}
+/* Navigation */
         .navbar {
             background: rgba(255, 255, 255, 0.95) !important;
             backdrop-filter: blur(20px);
@@ -105,19 +112,11 @@
             color: white;
         }
 
-      
 /* COMMENT: Ensure hero section fills viewport */
 .hero {
   position: relative;
   height: 100vh;
   overflow: hidden;
-}
-
-/* COMMENT: Style carousel images as background */
-.hero .carousel-inner .carousel-item img.hero-bg {
-  object-fit: cover;
-  height: 100vh;
-  filter: brightness(0.6); /* Darken for text readability */
 }
 
 /* COMMENT: Position content above carousel */
@@ -467,6 +466,7 @@
         body[data-lang="en"] .lang-fr {
             display: none;
         }
+        */
         
     </style>
 </head>
@@ -512,7 +512,43 @@
         </div>
     </nav>
 
-    
+    <!-- Hero Section -->
+   <!-- <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 hero-content">
+                    <h1 class="lang-en">Innovating Web & App Experiences That Matter</h1>
+                    <h1 class="lang-fr">L’innovation au service de vos applications et sites web </h1>
+
+                    <p class="lang-en">We are a dynamic web and app development agency dedicated to crafting innovative
+                        digital solutions.<br>
+                        We empower businesses to thrive online. Specializing in modern website design, intuitive UI/UX,
+                        and scalable mobile applications.<br>
+                        EkambiTech combines creativity with technical expertise to deliver products that are both
+                        visually engaging and highly functional. </p>
+                    <p class="lang-fr">« Nous sommes une agence dynamique de développement web et mobile, dédiée à la
+                        création de solutions digitales innovantes.
+                        Nous aidons les entreprises à prospérer en ligne. Spécialisée dans la conception de sites
+                        modernes, l’UI/UX intuitive et les applications mobiles évolutives.
+                        EkambiTech allie créativité et expertise technique pour offrir des produits à la fois
+                        visuellement attractifs et hautement fonctionnels.</p>
+
+                    <a href="#about" class="btn-hero lang-en">
+                        <i class="bi bi-arrow-down"></i> Discover More
+                    </a>
+                    <a href="#about" class="btn-hero lang-fr">
+                        <i class="bi bi-arrow-down"></i> Découvrir Plus
+                    </a>
+                </div>
+                <div class="col-lg-5">
+                    <div class="profile-container">
+                        <img src="logoektech.png" alt="EkambiTech_Logo" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    -->
     <!-- Hero Section with Carousel Background -->
 <section id="home" class="hero">
 
@@ -552,7 +588,7 @@
         </p>
 
         <p class="lang-fr">Accord Pharma est une agence de promotion et de représentation médicale qui collabore avec des laboratoires pharmaceutiques pour promouvoir divers médicaments et fournir des consommables médicaux.
-        
+         
         </p>
         <a href="#about" class="btn-hero lang-en">
           <i class="bi bi-arrow-down"></i> Discover More
@@ -893,4 +929,3 @@
     </script>
 </body>
 </htm
-
